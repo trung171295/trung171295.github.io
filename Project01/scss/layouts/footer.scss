@@ -1,0 +1,92 @@
+.main-footer{
+    width: 100%;
+    min-height: 350px;
+    margin-top: 30px;
+    padding: 30px;
+    color:#fff;
+    background-color: $bg-color-footer;
+    .submit-mail{
+        h1{
+            margin-top: -5px;
+        }
+        input{
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 30px;
+            height: 30px;
+            border: transparent;
+            border-radius: 25px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.3);
+            color: $color-white;
+        }
+        .btn{
+            width: 150px;
+            margin-left: 15px;
+            background-color: $color-primary;
+            color:$color-white;
+            border-radius: 25px;
+        }
+    }
+    .line{
+        position: relative;
+        width: 80%;
+        margin:0 auto;
+        height: 1px;
+        background-color: #ccc;
+        &::before{
+            position: absolute;
+            content:'';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            margin-top: 3px;
+            background-color: #ccc;
+        }
+    }
+    .about{
+        h1{
+            font-size: 23px;
+            font-weight: 500;
+            a{
+                color: $color-primary;
+                text-decoration: none;
+                span{
+                    color:#555;
+                    text-transform: uppercase;
+                }
+            }
+        }  
+    }
+    .quick-menu,.office-hours,.address{
+        h1{
+            font-size: 16px;
+            padding: 15px 0;
+            border-bottom: 1px solid $color-primary;
+        }
+    }
+    ul.nav.nav-hours,.nav-quick{
+        display: block;
+        li{
+            padding: 7px 0;
+            a{
+                text-decoration: none;
+                color:#555;
+            }
+        }
+        .active{
+            color:$color-primary;
+        }
+    }
+    
+}
+.copyright{
+    width: 100%;
+    height: 70px;
+    padding-top: 15px;
+    background-color: #141414;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
