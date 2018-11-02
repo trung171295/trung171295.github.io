@@ -423,17 +423,19 @@ body {
   .post .post-item {
     position: relative;
     width: 100%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     box-sizing: border-box; }
-    .post .post-item:before {
-      position: absolute;
-      top: 0;
-      left: 0;
+    .post .post-item .item-img {
       width: 100%;
-      content: '';
-      padding-top: 100%; }
-    .post .post-item .item-img img {
-      width: 100%; }
+      position: relative; }
+      .post .post-item .item-img:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        content: '';
+        padding-top: 100%; }
+      .post .post-item .item-img img {
+        width: 100%; }
     .post .post-item .item-text {
       position: absolute;
       top: 50%;
@@ -463,18 +465,21 @@ body {
   .post .child {
     width: 100%;
     box-sizing: border-box; }
-    .post .child:before {
-      position: absolute;
-      top: 0;
-      left: 0;
+    .post .child .item-img-child {
       width: 100%;
-      content: '';
-      padding-top: 100%; }
-    .post .child .item-img-child img {
-      margin: 5px 0;
-      box-sizing: border-box;
-      width: 100%;
-      height: 50%; }
+      position: relative; }
+      .post .child .item-img-child:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        content: '';
+        padding-top: 100%; }
+      .post .child .item-img-child img {
+        margin: 5px 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50%; }
     .post .child .item-text-child {
       position: absolute;
       top: 30%;
@@ -735,20 +740,21 @@ body {
     .most-popular .last-news .last-news-item {
       margin: 30px 0; }
       .most-popular .last-news .last-news-item .post-item {
-        position: relative;
         width: 100%;
         position: relative;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         box-sizing: border-box; }
-        .most-popular .last-news .last-news-item .post-item::before {
-          position: absolute;
-          top: 0;
-          left: 0;
-          content: '';
-          padding-top: 100%; }
-        .most-popular .last-news .last-news-item .post-item .item-img img {
+        .most-popular .last-news .last-news-item .post-item .item-img {
           width: 100%;
-          height: 450px; }
+          position: relative; }
+          .most-popular .last-news .last-news-item .post-item .item-img::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            padding-top: 100%; }
+          .most-popular .last-news .last-news-item .post-item .item-img img {
+            width: 100%; }
         .most-popular .last-news .last-news-item .post-item .item-text {
           position: absolute;
           top: 50%;
@@ -791,20 +797,22 @@ body {
           width: 60%;
           margin: 5px auto;
           padding-left: 30px; }
-          .most-popular .last-news .last-news-item .item-child .item-text .post-cat a {
-            font-size: 13px;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 5px;
-            background-color: #db0f38; }
+          .most-popular .last-news .last-news-item .item-child .item-text .post-cat {
+            margin-bottom: 15px; }
+            .most-popular .last-news .last-news-item .item-child .item-text .post-cat a {
+              font-size: 13px;
+              color: #ffffff;
+              text-decoration: none;
+              font-weight: bold;
+              padding: 5px;
+              background-color: #db0f38; }
           .most-popular .last-news .last-news-item .item-child .item-text .title {
-            margin: 10px 0; }
+            margin: 0;
+            line-height: 20px;
+            font-size: 16px; }
             .most-popular .last-news .last-news-item .item-child .item-text .title a {
-              font-size: 16px;
               color: #2f2f33;
               text-decoration: none;
-              line-height: 23px;
               display: inline-block; }
               .most-popular .last-news .last-news-item .item-child .item-text .title a:hover {
                 color: #db0f38; }
@@ -1213,23 +1221,24 @@ body {
     width: 100%;
     height: auto; }
     .post .post-item {
-      position: relative;
       width: 100%;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       box-sizing: border-box;
       padding-bottom: 15px; }
-      .post .post-item:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        content: '';
-        padding: 100%; }
-      .post .post-item .item-img img {
+      .post .post-item .item-img {
+        position: relative;
         width: 100%; }
+        .post .post-item .item-img:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          content: '';
+          padding-top: 100%; }
+        .post .post-item .item-img img {
+          width: 100%; }
       .post .post-item .item-text {
         position: absolute;
-        top: 30%;
+        top: 25%;
         left: 0;
         color: #ffffff;
         text-align: left;
@@ -1258,21 +1267,24 @@ body {
       width: 100%;
       box-sizing: border-box;
       padding-bottom: 15px; }
-      .post .child:before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        content: '';
-        padding: 100%; }
-      .post .child .item-img-child img {
-        margin: 5px 0;
-        box-sizing: border-box;
-        width: 100%;
-        height: 50%; }
+      .post .child .item-img-child {
+        position: relative;
+        width: 100%; }
+        .post .child .item-img-child:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          content: '';
+          padding-top: 100%; }
+        .post .child .item-img-child img {
+          margin: 5px 0;
+          box-sizing: border-box;
+          width: 100%;
+          height: 50%; }
       .post .child .item-text-child {
         position: absolute;
-        top: 50%;
+        top: 35%;
         left: 0;
         color: #ffffff;
         text-align: left;
@@ -1296,6 +1308,100 @@ body {
           text-decoration: none;
           color: #d6d1d1; }
 
+  .last-news {
+    margin: 30px 0; }
+    .last-news .last-news-item {
+      margin: 30px 0; }
+      .last-news .last-news-item .post-item {
+        width: 100%;
+        position: relative;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        box-sizing: border-box; }
+        .last-news .last-news-item .post-item .item-img {
+          width: 100%;
+          position: relative; }
+          .last-news .last-news-item .post-item .item-img::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            padding-top: 100%; }
+          .last-news .last-news-item .post-item .item-img img {
+            width: 100%; }
+        .last-news .last-news-item .post-item .item-text {
+          position: absolute;
+          top: 40%;
+          left: 0;
+          color: #ffffff;
+          text-align: left;
+          padding: 0 20px;
+          box-sizing: border-box; }
+          .last-news .last-news-item .post-item .item-text .post-cat a {
+            font-size: 13px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px;
+            background-color: #db0f38; }
+          .last-news .last-news-item .post-item .item-text .title {
+            font-size: 23px;
+            margin: 0; }
+            .last-news .last-news-item .post-item .item-text .title a {
+              color: #fff;
+              text-decoration: none; }
+          .last-news .last-news-item .post-item .item-text small span {
+            margin-left: 30px; }
+          .last-news .last-news-item .post-item .item-text small a {
+            text-decoration: none;
+            color: #d6d1d1; }
+          .last-news .last-news-item .post-item .item-text .description {
+            display: none; }
+      .last-news .last-news-item .item-child {
+        margin: 30px 0;
+        position: relative; }
+        .last-news .last-news-item .item-child .item-img {
+          width: 40%;
+          position: relative; }
+          .last-news .last-news-item .item-child .item-img::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            padding-top: 100%; }
+          .last-news .last-news-item .item-child .item-img img {
+            width: 100%; }
+        .last-news .last-news-item .item-child .item-text {
+          width: 60%;
+          margin: 5px auto;
+          padding-left: 30px; }
+          .last-news .last-news-item .item-child .item-text .post-cat a {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 13px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px;
+            background-color: #db0f38; }
+          .last-news .last-news-item .item-child .item-text h1.title {
+            margin-top: 0;
+            font-size: 13px;
+            line-height: 15px; }
+            .last-news .last-news-item .item-child .item-text h1.title a {
+              color: #2f2f33;
+              text-decoration: none;
+              display: inline-block; }
+              .last-news .last-news-item .item-child .item-text h1.title a:hover {
+                color: #db0f38; }
+          .last-news .last-news-item .item-child .item-text small span {
+            margin-left: 30px; }
+          .last-news .last-news-item .item-child .item-text small a {
+            text-decoration: none;
+            color: #d6d1d1; }
+          .last-news .last-news-item .item-child .item-text .description {
+            display: none; }
+
   .btn-loadmore {
     background-color: #db0f38;
     color: #fff; }
@@ -1315,7 +1421,8 @@ body {
   .main-footer .submit-mail {
     position: relative; }
     .main-footer .submit-mail input {
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 10px; }
     .main-footer .submit-mail .btn {
       margin: 30px 0;
       position: absolute;

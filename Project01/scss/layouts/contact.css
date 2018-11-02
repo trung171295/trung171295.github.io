@@ -1,6 +1,9 @@
 .content .maps {
   width: 100%;
   height: 600px; }
+  @media screen and (max-width: 768px) {
+    .content .maps {
+      height: 300px; } }
   .content .maps iframe {
     width: 100%;
     height: 100%; }

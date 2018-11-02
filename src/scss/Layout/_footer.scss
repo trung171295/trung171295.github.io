@@ -1,0 +1,128 @@
+footer{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #000000;
+    .footer-h{
+        width: 100%;
+        position: relative;
+        padding: 20px 0;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color:$color-text-menu;
+            opacity: 0.4;
+            z-index: 1;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30%;
+            height: 4px;
+            background-color: $color-primary;
+            z-index: 5;
+            border-radius: 5px;
+        }
+    }
+    .footer-about{
+        h1{
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+    .footer-scial{
+        width: 100%;
+        h1{
+            font-size: 14px;
+            line-height: 18px;
+            width: 30%;
+        }
+        .icon-scial{
+            padding-left: 30px;
+            width: 70%;
+            i{
+                width: 45px;
+                height: 45px;
+                font-size: 28px;
+                line-height: 45px;
+                background-color: #000000;
+                color: $color-white;
+                border-radius: 50%;
+                text-align: center;
+                margin: 10px 0 10px 10px;
+                transition: all 0.5s;
+                &:hover{
+                    color: #000000;
+                    background-color: $color-white;
+                }
+            }
+        }
+    }
+    .footer-link{
+        width: 100%;
+        h1{
+            font-size: 14px;
+            line-height: 18px;
+            width: 30%;
+            white-space: nowrap;
+        }
+        .flink-control{
+            color: #747373;
+            font-size: 12px;
+            line-height: 18px;
+            &:focus{
+                box-shadow: none;
+                border-color:#ced4da;
+            }
+            option{
+                font-size: 12px;
+                line-height: 18px;
+                color: #747373;
+            }
+        }
+    }
+    .f-title{
+        font-size: 13px;
+        line-height: 22px;
+        font-weight: bold;
+    }
+    .address,.phone,.showroom{
+        p{
+            font-size: 13px;
+            line-height: 22px;
+            margin-bottom: 0;
+        }
+    }
+    .phone{
+        ul li.nav-item{
+            font-size: 13px;
+            line-height: 22px;
+        }
+    }
+    .showroom{
+        span{
+            font-size: 13px;
+            line-height: 22px;
+        }
+    }
+}
+.copyright{
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    padding: 24px 0;
+    h1{
+        font-size: 13px;
+        line-height: 18px;
+        color: #5b5959;
+        i{
+            padding-right: 10px;
+            font-size: 15px;
+            color: #5b5959;
+        }
+    }
+}

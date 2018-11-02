@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px){
+    header{
+        .logo{
+            span{
+                display: none;
+            }
+            img{
+                transform: scale(0.5);
+            }
+        }
+        .search{
+            float: none!important;
+            .language{
+                display: none!important;
+            }
+            .search-input{
+                position: absolute;
+                float: none!important;
+                .form-control-sm{
+                    position: absolute;
+                    float: none!important;
+                    top: 50px;
+                    left: 0;
+                    width: 95vw;
+                    z-index: 100;
+                    border-radius: 0;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

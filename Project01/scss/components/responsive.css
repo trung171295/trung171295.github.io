@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$color-white".
-        on line 47 of C:\Users\trung\Desktop\Project01\scss\components\responsive.scss
+        on line 49 of C:\Users\trung\Desktop\Project01\scss\components\responsive.scss
 
-42:             }
-43:             .item-text{
-44:                 position: absolute;
-45:                 top: 30%;
-46:                 left: 0;
-47:                 color: $color-white;
-48:                 text-align: left;
-49:                 padding:0 20px;
-50:                 box-sizing: border-box;
-51:                 .description{
-52:                     display: none;
+44:             } 
+45:             .item-text{
+46:                 position: absolute;
+47:                 top: 25%;
+48:                 left: 0;
+49:                 color: $color-white;
+50:                 text-align: left;
+51:                 padding:0 20px;
+52:                 box-sizing: border-box;
+53:                 .description{
+54:                     display: none;
 
 Backtrace:
-C:\Users\trung\Desktop\Project01\scss\components\responsive.scss:47
+C:\Users\trung\Desktop\Project01\scss\components\responsive.scss:49
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -98,4 +98,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-white\".\A         on line 47 of C:\Users\trung\Desktop\Project01\scss\components\responsive.scss\A \A 42:             }\A 43:             .item-text{\A 44:                 position: absolute;\A 45:                 top: 30%;\A 46:                 left: 0;\A 47:                 color: $color-white;\A 48:                 text-align: left;\A 49:                 padding:0 20px;\A 50:                 box-sizing: border-box;\A 51:                 .description{\A 52:                     display: none;"; }
+  content: "Error: Undefined variable: \"$color-white\".\A         on line 49 of C:\Users\trung\Desktop\Project01\scss\components\responsive.scss\A \A 44:             } \A 45:             .item-text{\A 46:                 position: absolute;\A 47:                 top: 25%;\A 48:                 left: 0;\A 49:                 color: $color-white;\A 50:                 text-align: left;\A 51:                 padding:0 20px;\A 52:                 box-sizing: border-box;\A 53:                 .description{\A 54:                     display: none;"; }
